@@ -10,10 +10,10 @@ import jakarta.persistence.Table;
 public class User {
     @Id // this annotation is used to show this attributes as primary key
     @Column(name="id") //if you don't write this then column name would be rollNo
-    int rollNo;
-    String name;
-    int age;
-    String mobileNo;
+    private int rollNo;
+    private String name;
+    private int age;
+    private String mobileNo;
 
     public User(){}
     public User(int rollNo, String name, int age, String mobileNo) {
